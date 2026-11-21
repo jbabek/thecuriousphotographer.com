@@ -18,20 +18,6 @@ h1{font-weight:600;font-size:clamp(57px,10vw,121px);line-height:.9;letter-spacin
 section{padding:clamp(58px,8vw,98px) 0}section h2{font-size:clamp(39px,6vw,72px);letter-spacing:-.074em;line-height:1.04;font-weight:600;margin:16px 0 23px}.section-lead{font-size:19px;line-height:1.65;max-width:800px}.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}.feature{background:var(--card);padding:clamp(24px,4vw,44px);border-radius:4px;min-height:340px;display:flex;flex-direction:column;align-items:flex-start}.feature .label{font-size:11px;color:var(--sub)}.feature h3{font-size:clamp(30px,4vw,49px);letter-spacing:-.06em;line-height:1.06;margin:20px 0 16px;font-weight:600}.feature p{font-size:16px;line-height:1.7;margin:0}.feature .challenge{font:11px/1.65 "IBM Plex Mono",monospace;letter-spacing:.03em;margin-top:auto;padding-top:30px;color:#a04e37;text-transform:uppercase}.overview{display:grid;grid-template-columns:1fr 1fr;gap:8vw}.overview p{font-size:18px;line-height:1.7;margin-top:0}.overview ul{padding-left:21px;line-height:1.9;font-size:16px}.overview li{padding-left:5px}.day-list{border-top:1px solid var(--rule)}.day-row{display:grid;grid-template-columns:125px 1fr;gap:25px;border-bottom:1px solid var(--rule);padding:16px 0}.day-row time{font:12px "IBM Plex Mono",monospace;color:var(--sub)}.day-row span{font-size:15px;line-height:1.5}.info{background:var(--night);color:#f3f3eb}.info h2{color:#f3f3eb}.info p{font-size:17px;line-height:1.7;max-width:760px;color:#cad5c8}.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin:38px 0}.info-grid div{border-top:1px solid #8b9e8b;padding-top:17px}.info-grid .label{font-size:10px;color:#b3c5b3;display:block;margin-bottom:10px}.info-grid strong{font-size:16px;font-weight:600;line-height:1.5}.info .small{font-size:11px;color:#bbcabc;line-height:1.7;margin-top:24px}.teaser{border:1px solid var(--rule);padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:25px;border-radius:5px}.teaser strong{font-size:20px;letter-spacing:-.03em}.teaser p{font-size:14px;line-height:1.6;color:var(--sub);margin:8px 0 0}.teaser a{white-space:nowrap;font-size:13px;font-weight:700;text-underline-offset:4px}.footer{background:#111a15;color:#b6c4b6;font:11px "IBM Plex Mono",monospace;padding:26px 0}.footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap} 
 @media(max-width:700px){.wrap{width:calc(100% - 36px)}header{padding:18px 0}.top-date{font-size:9px}.hero{padding:60px 0 32px}h1{font-size:clamp(54px,12vw,83px)}.hero-rail{grid-template-columns:1fr 1fr}.two,.overview{grid-template-columns:1fr}.feature{min-height:unset}.feature .challenge{padding-top:22px}.day-row{grid-template-columns:100px 1fr;gap:12px}.info-grid{grid-template-columns:1fr 1fr}.teaser{flex-direction:column;align-items:flex-start}.teaser a{white-space:normal}}@media(max-width:410px){h1{font-size:clamp(48px,12vw,67px)}.info-grid{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .reference-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:15px 0;width:100%}.reference-photo{margin:0;min-width:0}.reference-photo img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;background:#cad0c6;border-radius:3px}.reference-photo figcaption{font-size:11px;line-height:1.45;padding:8px 0 0}.reference-photo figcaption strong{display:block}.reference-photo figcaption span{color:var(--sub)}.reference-label{font:11px "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;margin:22px 0 8px}.reference-note{font-size:11px!important;color:var(--sub);line-height:1.5!important;margin-bottom:16px!important}.mentor{background:#202924;color:#f2f0e7}.mentor-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:55px}.mentor .kicker{color:#d1a18e}.mentor h2{font-size:clamp(46px,7vw,85px);line-height:.96}.mentor p{color:#c3cdc1;line-height:1.7;font-size:17px}.mentor .lead{font-size:clamp(21px,2.5vw,28px);line-height:1.4;color:#f2f0e7}.mentor-aside{border-top:1px solid #849184;padding-top:20px}.mentor-aside h3{font-size:30px;letter-spacing:-.04em}.mentor-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.mentor-links a{border:1px solid #9ca99b;color:#f2f0e7;padding:12px 15px;border-radius:3px;text-decoration:none;font-size:13px;font-weight:700}@media(max-width:750px){.mentor-grid{grid-template-columns:1fr;gap:22px}}@media(max-width:420px){.reference-grid{gap:6px}.reference-photo figcaption{font-size:10px}}
-/* First-visit club exclusivity announcement */
-.club-ribbon{display:inline-flex;align-items:center;gap:9px;padding:10px 14px;margin:0 0 4px;border:1px solid #c8a68f;border-radius:3px;color:#eed9cd;font:600 11px/1.5 "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase}
-.club-ribbon:before{content:"✦";color:#e28c6c}
-.club-modal[hidden]{display:none!important}
-.club-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:22px;background:rgba(10,16,13,.84);backdrop-filter:blur(7px)}
-.club-panel{position:relative;width:min(100%,620px);background:#f1f0e8;color:#19211d;padding:clamp(30px,6vw,62px);border-top:6px solid #d36748;box-shadow:0 25px 90px #0007}
-.club-panel .kicker{color:#a04e37}
-.club-panel h2{font-size:clamp(34px,6vw,57px);font-weight:600;letter-spacing:-.065em;line-height:1.08;margin:16px 0 18px}
-.club-panel p:not(.kicker){font-size:16px;line-height:1.6;color:#526053;margin:0 0 22px}
-.club-panel .actions{margin:15px 0 0}
-.club-panel .button.alt{color:#19211d;border-color:#77877b}
-.club-close{position:absolute;right:14px;top:10px;border:0;background:transparent;color:#526053;font-size:29px;cursor:pointer;padding:5px 10px}
-body.club-open{overflow:hidden}
-
 </style>
 </head>
 <body>
@@ -41,7 +27,7 @@ body.club-open{overflow:hidden}
 <div class="hero wrap">
 <p class="kicker"><span class="dot"></span> A STUDIO LIGHTING PHOTOGRAPHY WORKSHOP</p>
 <h1>Hollywood<br><em>Light &amp; Colour</em><span style="color:var(--accent)">.</span></h1>
-<div class="club-ribbon">Exclusive for Cathay Camera Club members only</div>
+
 <p class="hero-intro">Two models. Two contrasting looks. One day in a working studio with photographer Gareth Brown.</p>
 <p class="hero-note">Explore the sculpted glamour of classic Hollywood portraits and the expressive possibilities of contemporary colour and movement. A hands-on studio workshop for curious photographers who want to make pictures, not just watch them being made.</p>
 <div class="actions"><a href="https://form.jotform.com/260118895004051" class="button" target="_blank" rel="noopener noreferrer">Sign up for the workshop ↗</a><a href="#workshop" class="button alt">Explore the workshop ↓</a><a href="#instructor" class="button alt">Meet Gareth ↓</a></div>
@@ -74,54 +60,9 @@ body.club-open{overflow:hidden}
 </div>
 <div class="teaser"><div><strong>The day-of-shoot companion</strong><p>The detailed running checklist, learning notes and exercises have their own page, ready for further development.</p></div><a href="/day-of-shoot.html">View the day-of-shoot page ↗</a></div>
 </section>
-<section class="info" id="joining"><div class="wrap"><p class="kicker" style="color:#b6c9b6">04 / JOIN THE WORKSHOP</p><h2>Come make something.</h2><p>This workshop is intended for Cathay Camera Club members, with just 8–10 photographers in the studio. If you'd like to take part, contact the club organiser for registration and the final joining instructions.</p>
+<section class="info" id="joining"><div class="wrap"><p class="kicker" style="color:#b6c9b6">04 / JOIN THE WORKSHOP</p><h2>Come make something.</h2><p>Open to Cathay Camera Club members and non-members alike. With just 8–10 photographers in the studio, this is a small-group opportunity to learn, experiment and shoot with Gareth Brown.</p>
 <div class="info-grid"><div><span class="label">DATE &amp; TIME</span><strong>Saturday 5 December<br>9 AM–4 PM</strong></div><div><span class="label">INSTRUCTOR</span><strong>Gareth Brown<br>Blow Up Studios</strong></div><div><span class="label">LOCATION</span><strong>Blow Up Studios<br>Hong Kong</strong></div></div>
-<div class="actions"><a href="https://form.jotform.com/260118895004051" class="button" target="_blank" rel="noopener noreferrer">Sign up now ↗</a></div><p class="small">Registration is coordinated through Cathay Camera Club. Availability and joining information should be confirmed with the organiser.</p>
+<div class="actions"><a href="https://form.jotform.com/260118895004051" class="button" target="_blank" rel="noopener noreferrer">Sign up now ↗</a></div><p class="small">All photographers are welcome. Registration and remaining availability are managed through the sign-up form.</p>
 </div></section>
 </main><footer class="footer"><div class="wrap"><span>© 2026 THE CURIOUS PHOTOGRAPHER · HONG KONG</span><span>PHOTOGRAPHY FOR THE PERPETUALLY CURIOUS</span></div></footer>
-<div class="club-modal" id="club-welcome" role="dialog" aria-modal="true" aria-labelledby="club-welcome-title" aria-describedby="club-welcome-description" hidden>
-<div class="club-panel">
-<button class="club-close" id="club-welcome-close" aria-label="Close announcement" type="button">×</button>
-<p class="kicker">A PRIVATE MEMBERS' WORKSHOP</p>
-<h2 id="club-welcome-title">Exclusive for Cathay Camera Club members only<span style="color:#d36748">.</span></h2>
-<p id="club-welcome-description">Hollywood Light &amp; Colour with Gareth Brown is a special studio experience reserved for Cathay Camera Club members. We look forward to creating something extraordinary together.</p>
-<div class="actions"><a class="button" href="https://form.jotform.com/260118895004051" target="_blank" rel="noopener noreferrer" id="club-welcome-signup">Member sign-up ↗</a><button class="button alt" type="button" id="club-welcome-continue">Explore the workshop</button></div>
-</div></div>
-<script>
-(function(){
-  var modal=document.getElementById('club-welcome');
-  var closeButton=document.getElementById('club-welcome-close');
-  var continueButton=document.getElementById('club-welcome-continue');
-  var signUp=document.getElementById('club-welcome-signup');
-  var key='curious-photographer-club-welcome-v1';
-  var storageAvailable=true;
-  var hasSeen=false;
-  try{hasSeen=localStorage.getItem(key)==='seen';}catch(e){storageAvailable=false;}
-  if(hasSeen)return;
-  var previousFocus=document.activeElement;
-  function dismiss(){
-    modal.hidden=true;
-    document.body.classList.remove('club-open');
-    if(storageAvailable){try{localStorage.setItem(key,'seen');}catch(e){}}
-    if(previousFocus && typeof previousFocus.focus==='function')previousFocus.focus();
-  }
-  modal.hidden=false;
-  document.body.classList.add('club-open');
-  closeButton.focus();
-  closeButton.addEventListener('click',dismiss);
-  continueButton.addEventListener('click',dismiss);
-  signUp.addEventListener('click',dismiss);
-  modal.addEventListener('click',function(e){if(e.target===modal)dismiss();});
-  document.addEventListener('keydown',function(e){
-    if(modal.hidden)return;
-    if(e.key==='Escape'){dismiss();return;}
-    if(e.key==='Tab'){
-      var focusables=Array.prototype.slice.call(modal.querySelectorAll('button,a[href]'));
-      var first=focusables[0],last=focusables[focusables.length-1];
-      if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}
-      else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}
-    }
-  });
-})();
-</script>
 </body></html>
