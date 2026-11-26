@@ -20,7 +20,7 @@ section{padding:clamp(58px,8vw,98px) 0}section h2{font-size:clamp(39px,6vw,72px)
 .reference-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:15px 0;width:100%}.reference-photo{margin:0;min-width:0}.reference-photo img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;background:#cad0c6;border-radius:3px}.reference-photo figcaption{font-size:11px;line-height:1.45;padding:8px 0 0}.reference-photo figcaption strong{display:block}.reference-photo figcaption span{color:var(--sub)}.reference-label{font:11px "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;margin:22px 0 8px}.reference-note{font-size:11px!important;color:var(--sub);line-height:1.5!important;margin-bottom:16px!important}.mentor{background:#202924;color:#f2f0e7}.mentor-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:55px}.mentor .kicker{color:#d1a18e}.mentor h2{font-size:clamp(46px,7vw,85px);line-height:.96}.mentor p{color:#c3cdc1;line-height:1.7;font-size:17px}.mentor .lead{font-size:clamp(21px,2.5vw,28px);line-height:1.4;color:#f2f0e7}.mentor-aside{border-top:1px solid #849184;padding-top:20px}.mentor-aside h3{font-size:30px;letter-spacing:-.04em}.mentor-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.mentor-links a{border:1px solid #9ca99b;color:#f2f0e7;padding:12px 15px;border-radius:3px;text-decoration:none;font-size:13px;font-weight:700}@media(max-width:750px){.mentor-grid{grid-template-columns:1fr;gap:22px}}@media(max-width:420px){.reference-grid{gap:6px}.reference-photo figcaption{font-size:10px}}
  .reference-image{min-height:150px;aspect-ratio:3/4;background:#d5d8cf;display:grid;place-items:center;overflow:hidden}.reference-image img{height:100%;object-fit:cover;object-position:center top}.reference-photo .reference-image:has(img[style*="none"]){background:repeating-linear-gradient(135deg,#e2e4dd,#e2e4dd 12px,#d7dbd2 12px,#d7dbd2 24px)} 
 /* Fully booked announcement */
-.sold-out-button{background:#5d6f5d;border-color:#5d6f5d;color:#fff;cursor:not-allowed;opacity:1}.sold-out-button:disabled{opacity:1}.sold-out-button:hover{filter:none}.sold-out-modal[hidden]{display:none!important}.sold-out-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:20px;background:rgba(9,16,12,.78);backdrop-filter:blur(5px)}.sold-out-panel{background:var(--paper);color:var(--ink);width:min(100%,530px);padding:clamp(28px,5vw,50px);border-top:5px solid var(--accent);position:relative;box-shadow:0 20px 80px #0007}.sold-out-panel h2{font-size:clamp(42px,7vw,65px);line-height:1;letter-spacing:-.07em;margin:14px 0 20px}.sold-out-panel p{font-size:16px;line-height:1.65;color:var(--sub)}.sold-out-close{position:absolute;right:11px;top:9px;background:transparent;border:0;font-size:30px;cursor:pointer;padding:5px 12px;color:var(--sub)}.sold-out-panel .button{margin-top:12px;background:var(--night);border-color:var(--night)}body.sold-out-open{overflow:hidden}
+.sold-out-button{background:#5d6f5d;border-color:#5d6f5d;color:#fff;cursor:not-allowed;opacity:1}.sold-out-button:disabled{opacity:1}.sold-out-button:hover{filter:none}
 </style>
 </head>
 <body>
@@ -68,26 +68,4 @@ section{padding:clamp(58px,8vw,98px) 0}section h2{font-size:clamp(39px,6vw,72px)
 </div></section>
 </main><footer class="footer"><div class="wrap"><span>© 2026 THE CURIOUS PHOTOGRAPHER · HONG KONG</span><span>PHOTOGRAPHY FOR THE PERPETUALLY CURIOUS</span></div></footer>
 
-<div class="sold-out-modal" id="sold-out-announcement" role="dialog" aria-modal="true" aria-labelledby="sold-out-title" aria-describedby="sold-out-description" hidden>
-<div class="sold-out-panel"><button type="button" class="sold-out-close" aria-label="Close announcement" id="sold-out-x">×</button>
-<p class="kicker">THE CURIOUS PHOTOGRAPHER · 05 DECEMBER 2026</p>
-<h2 id="sold-out-title">Fully booked<span style="color:var(--accent)">.</span></h2>
-<p id="sold-out-description">Our Hollywood Light &amp; Colour workshop with Gareth Brown on Saturday 5 December is now full. Thank you for the wonderful response!</p>
-<button type="button" class="button" id="sold-out-continue">Explore the workshop</button>
-</div></div>
-<script>
-(function(){
-var dialog=document.getElementById('sold-out-announcement');
-var close=document.getElementById('sold-out-x');
-var continueButton=document.getElementById('sold-out-continue');
-var key='tcp-dec5-fully-booked-seen';
-try{if(sessionStorage.getItem(key)==='yes')return;}catch(e){}
-var previousFocus=document.activeElement;
-function dismiss(){dialog.hidden=true;document.body.classList.remove('sold-out-open');try{sessionStorage.setItem(key,'yes')}catch(e){};if(previousFocus&&typeof previousFocus.focus==='function')previousFocus.focus();}
-dialog.hidden=false;document.body.classList.add('sold-out-open');close.focus();
-close.addEventListener('click',dismiss);continueButton.addEventListener('click',dismiss);
-dialog.addEventListener('click',function(e){if(e.target===dialog)dismiss();});
-document.addEventListener('keydown',function(e){if(dialog.hidden)return;if(e.key==='Escape'){dismiss();return}if(e.key==='Tab'){var nodes=[close,continueButton];if(e.shiftKey&&document.activeElement===nodes[0]){e.preventDefault();nodes[1].focus()}else if(!e.shiftKey&&document.activeElement===nodes[1]){e.preventDefault();nodes[0].focus()}}});
-})();
-</script>
 </body></html>
